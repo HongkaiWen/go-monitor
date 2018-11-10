@@ -244,6 +244,7 @@ func record(bd *StreamPair){
 	reqTime := bd.firstPacketSeen.Format("2006-01-02T15:04:05.999")
 	content := fmt.Sprintf("%s %s %d [%s] %s:%s%s\n", reqTime, cost, status, method, bd.key.net.Dst().String(), bd.key.transport.Dst().String(), url)
 	utils.Append2File("/tmp/test-access.log", content)
+	fmt.Println(content)
 }
 
 func DecodeHttpRequest(tcpPayload []byte)(url, method string, req *http.Request){
