@@ -162,6 +162,8 @@ func main() {
 	log.Printf("local ip %s", ip)
 	filter := filterString(ip)
 
+	log.Println(filter)
+
 	//filter = "tcp"
 
 	//log.Printf("starting capture on interface %q", *iface)
