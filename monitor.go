@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"bufio"
 	"bytes"
-	"./utils"
+	"go-monitor/utils"
 	"io"
 )
 
